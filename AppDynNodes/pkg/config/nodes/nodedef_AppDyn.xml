@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<nodedefs>
+<nodedef name="AppDynService" class="vdab.extnodes.appdyn.AppDynService">
+  	<attr name="ConsumedEventTypes">Number,Event</attr>
+    <attr name="PublishedEventTypes">NONE</attr>
+    <attr name="NodeDescTemplate">to ${Host}:${Port}</attr>
+    <attr name="NodeOverview">Sends metric data to AppDynamics. Data must be in an integer format</attr>    
+    <attr name="NodeQuality" >Prototype</attr>   
+    <datadef name="SelectedElement">
+		<attr name="Category">Standard</attr>
+	</datadef>
+		<datadef name="Host">
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="Port">
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="MetricGroup">
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="URL">
+		<attr name="Category">Technical</attr>
+	</datadef>
+</nodedef>
+</nodedefs>
